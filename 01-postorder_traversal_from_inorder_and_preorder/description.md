@@ -1,5 +1,5 @@
 ## Postorder Traversal of a BST from its Preorder and Inorder Traversal
-In this exercise, postorder traversal of a BST is generated from its preorder and inorder traversals. First, I am going to review the BST and the aforementioned traversals of a BST to understand what is going on in this repository.
+In this exercise, postorder traversal of a BST is generated from its preorder and inorder traversals. First, I am going to review the BST and the aforementioned traversals of a BST to understand what is going on in this problem.
 
 ### Binary Tree (BT)
 BT is a data structure in which each node has at most two children. The following [image](https://en.wikipedia.org/wiki/Binary_tree#:~:text=In%20computer%20science%2C%20a%20binary,child%20and%20the%20right%20child.) shows an binary tree.
