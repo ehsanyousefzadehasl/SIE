@@ -3,6 +3,7 @@ In this exercise, postorder traversal of a BST is generated from its preorder an
 
 ### Binary Tree (BT)
 BT is a data structure in which each node has at most two children. The following [image](https://en.wikipedia.org/wiki/Binary_tree#:~:text=In%20computer%20science%2C%20a%20binary,child%20and%20the%20right%20child.) shows an binary tree.
+
 ![Binary Tree](BT.png)
 
 ### Binary Search Tree (BST)
@@ -12,10 +13,12 @@ BST is a data structure which has the following properties:
 - The left and right subtree each must also be a binary search tree
 
 The following [image](https://levelup.gitconnected.com/an-into-to-binary-search-trees-432f94d180da) shows an example of a binary search tree.
+
 ![Binary Search Tree](BST.png)
 
 ### Complexity Analysis of operations on BST
 Regarding the fact that in time complexity analysis, we have consider the worst-case scenario, so we have to consider a skewed BST (shown in the following [figure](https://www.geeksforgeeks.org/skewed-binary-tree/)).
+
 ![Skewed BST](skewed_BST.png)
 
 
@@ -34,6 +37,7 @@ We have three traversals for a tree:
 3. Post-order traversal (Left Subtree - Right Subtree - ROOT)
 
 Look at the following [example](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/) to grasp what is going on here.
+
 ![Example Tree](traversal_example_tree.gif)
 
 - Inorder (Left, Root, Right) : 4 2 5 1 3
