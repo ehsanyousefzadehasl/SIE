@@ -43,6 +43,6 @@ In linear probing when a key conflicts, on a linear manner we are going to find 
 
 In quadric mechanism, we are going to search for empty locations in a quadric way -> (u + i ^ 2) % m where (0 =< (i) =< (m - 1)).
 
-In double hashing mechanism for handling conflict we use another hash function when we want to insert the element in an empty row.
+In double hashing mechanism for handling conflict we use another hash function when we want to insert the element in an empty row in this way -> (u + v * i) % m where 0 =< i < m.
 
 More information will be added.
