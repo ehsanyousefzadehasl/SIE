@@ -33,3 +33,16 @@ Techniques to solve the conflict problem:
 If try to have a sense on how terrible would act closed addressing (open hashing) in the worst case, let's consider the following example that all of the data we have are going to be mapped to just one bucket. In this situation, we lose the benefit of the hash table which guarantees that we will be able to retrieve the desired data in O(1). Using self-balancing trees is going to shrink linear search in each bucket to from O(n) to binary search O(nlogn).
 
 ![open hashing problem](closed_addressing-open_hashing_mess.jpg)
+
+## close hashing or open addressing
+In this method, for handling the conflicts, the used method is linear probing on default or it is said explicitly to use another mechanism (like: quadric probing, double hashing, Hopscotch hashing, Robin Hood hashing, Cuckoo Hashing, 2-Choice Hashing).
+
+![close hashing](close-hashing_open-addressing.png)
+
+In linear probing when a key conflicts, on a linear manner we are going to find the next empty row, and insert there ((u + i) % m; 0 =< (i) =< (m - 1)). On finding the key, we have to start from the address where the hashing function maps us, if we cannot find it there we have to start searching in a linear way. But, it can lead to a forever loop, so we have to think when we implement like we have to do the linear searching just for the number of the rows in our table.
+
+In quadric mechanism, we are going to search for empty locations in a quadric way -> (u + i ^ 2) % m where (0 =< (i) =< (m - 1)).
+
+In double hashing mechanism for handling conflict we use another hash function when we want to insert the element in an empty row.
+
+More information will be added.
